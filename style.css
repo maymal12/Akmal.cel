@@ -1,0 +1,342 @@
+/* Import Google font - Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Dancing+Script:wght@700&display=swap');
+
+:root {
+    --main-bg: #f9f6ff;
+    --primary: #6c4ca7;
+    --secondary: #b68ed6;
+    --white: #fff;
+    --text: #34224a;
+    --shadow: rgba(108, 76, 167, 0.08);
+    --violet-light: #e2d6f6;
+    --violet-dark: #30204b;
+}
+
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    background: var(--main-bg);
+    color: var(--text);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.violet-bg {
+    position: fixed;
+    z-index: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://a-static.besthdwallpaper.com/anime-violet-evergarden-wallpaper-2560x1600-101016_7.jpg') center center/cover no-repeat;
+    opacity: 0.18;
+    filter: blur(3.7px) brightness(1,05);
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary) 42%, var(--secondary) 100%);
+    color: var(--white);
+    box-shadow: 0 4px 16px var(--shadow);
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6vw 1rem 6vw;
+    background: transparent;
+}
+
+nav h1 {
+    font-size: 1,5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.violet-logo img {
+    width: 68px;
+    height: 67px;
+    object-fit: contain;
+    margin-right: 0.8rem;
+    vertical-align: middle;
+    border-radius: 15px;
+    border: 2px solid var(--secondary);
+    background: var(--main-bg);
+    box-shadow: 0 2px 12px var(--violet-dark);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: var(--violet-light);
+}
+
+.hero {
+    text-align: center;
+    padding: 3.5rem 2rem 2rem 2rem;
+    background: linear-gradient(135deg, #b68ed6a0 0%, #f9f6ff00 100%);
+    border-radius: 0 0 1.5rem 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+    text-shadow: 0 2px 16px var(--primary);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.anime-quote {
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anime-quote blockquote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.45rem;
+    color: var(--violet-dark);
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 2px 12px var(--shadow);
+    padding: 1.3rem 2.2rem;
+    border-radius: 1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    max-width: 400px;
+}
+
+.anime-quote blockquote span {
+    font-size: 0,8rem;
+    display: block;
+    text-align: right;
+    margin-top: 0,2rem;
+    color: var(--primary);
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.violet-hero-img {
+    width: 90px;
+    height: 98px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: var(--white);
+    border: 5px solid var(--secondary);
+    margin-bottom: 0.7rem;
+    box-shadow: 0 2px 16px var(--violet-dark);
+}
+
+main {
+    padding: 3vw 8vw;
+    position: relative;
+    z-index: 2;
+}
+
+section {
+    margin-bottom: 4,5rem;
+}
+
+section h2 {
+    color: var(--primary);
+    margin-bottom: 3,2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 0.6rem 0.6rem 0 0;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.about-content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--secondary);
+    background: var(--white);
+    box-shadow: 0 4px 16px var(--shadow);
+}
+
+.anime-element {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(182,142,214,0.12);
+    padding: 0.7rem 1.1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    max-width: 270px;
+}
+
+.anime-element img {
+    width: 44px;
+    height: 55px;
+    border-radius: 0.7rem;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    object-fit: contain;
+}
+
+.char-name {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: bold;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+.project-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project-card {
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px var(--shadow);
+    padding: 1rem;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 24px var(--shadow);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin-bottom: 0.8rem;
+    background: #eee;
+}
+
+.project-card h3 {
+    color: var(--primary);
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+}
+
+.anime-stamp {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    font-size: 2rem;
+    opacity: 0.21;
+    pointer-events: none;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--secondary);
+    background: var(--white);
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px var(--shadow);
+    border-color: var(--primary);
+}
+
+#contact a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+footer {
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.1rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 0.2px;
+    box-shadow: 0 -2px 8px var(--shadow);
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 3vw 3vw;
+    }
+    .about-content,
+    .project-list,
+    .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 95%;
+    }
+}
+
+.sosmed-links {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+}
+
+.sosmed-icon {
+    width: 30px;
+    height: 35px;
+    transition: transform 0.3s;
+    filter: grayscale(30%);
+}
+
