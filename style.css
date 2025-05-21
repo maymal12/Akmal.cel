@@ -22,6 +22,34 @@ body {
     overflow-x: hidden;
 }
 
+/* Tambahan untuk tombol dark mode */
+#toggle-mode {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+#toggle-mode:hover {
+    color: #b68ed6;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #1a1223;
+    color: #f9eaff;
+}
+body.dark-mode header,
+body.dark-mode footer {
+    background: #2c1c3c;
+}
+body.dark-mode a { color: #eb98ff; }
+body.dark-mode .project-card {
+    background: #2c1c3c;
+    color: #f9eaff;
+}
+
 .violet-bg {
     position: fixed;
     z-index: 0;
